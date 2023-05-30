@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from "react-slick";
-import Heart from "react-heart";
+// import Heart from "react-heart";
 import dataPhone from './DataPhone';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const SampleNextArrow = (props) => {
     const { onClick } = props
@@ -37,7 +38,7 @@ function PhoneDetail() {
         prevArrow: <SamplePrevArrow />,
     }
 
-    const [active, setActive] = useState(false)
+    // const [active, setActive] = useState(false)
 
     return(
         <div className='relative'>
@@ -54,7 +55,14 @@ function PhoneDetail() {
                                     <p className="text-[15px] font-semibold h-[50px] text-[#444]">{value.name}</p>
                                     <p className="text-red-600 font-semibold mb-1">{value.price}.000.000 VND </p>
                                 </div>
-                                <div>
+                                <div className='mt-[20px]'>
+                                    <Link to='/payment'>
+                                        <p className='text-center bg-red-600 w-full h-[40px] text-white py-[6px] rounded-md cursor-pointer hover:scale-105'>
+                                            Mua ngay
+                                        </p>
+                                    </Link>
+                                </div>
+                                {/* <div>
                                     <div className='text-yellow-300 pb-[5px]'>
                                         <i className='fa fa-star'></i>
                                         <i className='fa fa-star'></i>
@@ -68,7 +76,7 @@ function PhoneDetail() {
                                             <Heart isActive={active} onClick={() => setActive(!active)} animationScale = {1.25} inactiveColor = "#dc2626" animationTrigger = "both" />
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     )

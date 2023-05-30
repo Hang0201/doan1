@@ -31,7 +31,7 @@ function Scroll() {
     return(
         <div>
             {showGoToTop && (
-                <button className=" fixed right-5 bottom-5 bg-red-400 text-white p-[5px] rounded-xl" onClick={goToTop}>
+                <button className=" fixed right-5 bottom-5 bg-red-400 text-white px-[5px] py-[8px] rounded-xl" onClick={goToTop}>
                     <div className=" text-[15px]">
                         <i className="fa-solid fa-angle-up"></i>
                     </div>

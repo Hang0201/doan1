@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link } from "react-router-dom";
+// import {Link } from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
@@ -19,28 +19,28 @@ function Footer() {
                         <h2>Thông tin cửa hàng</h2>
                         <ul>
                             <li>
-                                <a>
+                                <a href='/'>
                                     <FontAwesomeIcon className={cx('icon-footer')} icon={faHome}/>
                                     &nbsp;
                                     <span>Địa chỉ: 24/367/100 CV2 Trâu Quỳ, Gia Lâm, Hà Nội</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href='/'>
                                     <FontAwesomeIcon className={cx('icon-footer')} icon={faPhone}/>
                                     &nbsp;
                                     <span>Hotline: 0999999999</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href='/'>
                                     <FontAwesomeIcon className={cx('icon-footer')} icon={faPhone}/>
                                     &nbsp;
                                     <span>Tư vấn trả góp: 0924865898</span>
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href='/'>
                                     <FontAwesomeIcon className={cx('icon-footer')} icon={faPhone}/>
                                     &nbsp;
                                     <span>Hỗ trợ kỹ thuật: 0393939393</span>
@@ -59,16 +59,16 @@ function Footer() {
                         <h2>Giới thiệu</h2>
                         <ul>
                             <li>
-                                <a>Về chúng tôi </a>
+                                <a href='/'>Về chúng tôi </a>
                             </li>
                             <li>
-                                <a>Các sản phẩm mới</a>
+                                <a href='/'>Các sản phẩm mới</a>
                             </li>
                             <li>
-                                <a>Sản phẩm hot</a>
+                                <a href='/'>Sản phẩm hot</a>
                             </li>
                             <li>
-                                <a>Ưu đãi</a>
+                                <a href='/'>Ưu đãi</a>
                             </li>
                         </ul>
                     </div>

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faCartShopping, faSearch, faUser, faPhone, faLaptop, faHeadphones, faBox } from '@fortawesome/free-solid-svg-icons';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+// import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const cx = classNames.bind(styles);
 function Header() {
@@ -30,9 +30,9 @@ function Header() {
                         <Link to="/">
                             <img src={logo} alt="" className={cx('img-logo')}/>
                         </Link>                 
-                        <div  className={cx('text')}>
+                        <a  className={cx('text')} href="/">
                             <h3>NTH MOBILE</h3>
-                        </div>
+                        </a>
                     </div>
                     <div className={cx('nav')}>
                         <div className={cx('search')}>
@@ -42,45 +42,45 @@ function Header() {
                             </button>
                         </div>
                         <div className={cx('nav-menu')}>
-                            <a className={cx('menu')}>
+                            <Link className={cx('menu')} to="/phone">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faPhone} />                   
                                 </i>
                                 <p className={cx('title')}>Điện thoại</p>
-                            </a>
-                            <a className={cx('menu')}>
+                            </Link>
+                            <Link className={cx('menu')} to="/laptop">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faLaptop} />                   
                                 </i>
                                 <p className={cx('title')}>Laptop</p>
-                            </a>
-                            <a className={cx('menu')}>
+                            </Link>
+                            <Link className={cx('menu')} to="/accessories">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faHeadphones} />                   
                                 </i>
                                 <p className={cx('title')}>Phụ kiện</p>
-                            </a>
-                            <a className={cx('menu')}>
+                            </Link>
+                            <Link className={cx('menu')} to="/old">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faBox} />                   
                                 </i>
                                 <p className={cx('title')}>Hàng cũ</p>
-                            </a>
-                            <a className={cx('menu')}>
+                            </Link>
+                            <Link className={cx('menu')} to="/cart">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faCartShopping} />                   
                                 </i>
                                 <p className={cx('title')}>Giỏ hàng</p>
-                            </a>
-                            <a className={cx('menu')}>
+                            </Link>
+                            <Link className={cx('menu')} to="/login">
                                 <i className={cx('phone')}>
                                 <FontAwesomeIcon icon={faUser} />                   
                                 </i>
                                 <p className={cx('title')}>Tài khoản</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
-                    <div className={cx('contact')}>
+                    {/* <div className={cx('contact')}>
                         <button className={cx('btn-contact')}>
                             <FontAwesomeIcon className={cx('icon-contact')} icon={faFacebook}/>
                         </button>
@@ -90,7 +90,7 @@ function Header() {
                         <button className={cx('btn-contact')}>
                             <FontAwesomeIcon className={cx('icon-contact')} icon={faFacebook}/>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

@@ -8,12 +8,12 @@ function Slide() {
         {
             id: 1,
             title: "GALAXY S23 ULTRA",
-            image: "./images/slider/slide1.png",
+            image: "./images/slider/slide2.png",
         },
         {
             id: 2,
             title: "GALAXY S23 ULTRA",
-            image: "./images/slider/Slide2.png",
+            image: "./images/slider/Slide1.png",
         },
     ]
 
